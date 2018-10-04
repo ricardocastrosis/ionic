@@ -1,0 +1,39 @@
+<!--
+  Generated template for the DetalhePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detalhe</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+      <img [src]="item?.foto"/>
+      <ion-card-content>
+        <ion-card-title>
+          {{ item?.titulo }}
+          </ion-card-title>
+        <p>
+          {{ item?.descricao }}
+        </p>
+        <button ion-button block color="secondary">R$ {{ item?.valor }}</button>
+        <br>
+
+        <iframe width="560" height="315" 
+          [src]="this.sanitizer.bypassSecurityTrustResourceUrl(item?.video)" 
+          frameborder="0" allow="autoplay; encrypted-media" 
+          allowfullscreen>]
+        </iframe>
+
+
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>
