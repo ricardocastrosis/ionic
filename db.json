@@ -1,0 +1,152 @@
+{
+  "produtos": [
+    {
+      "id": 2,
+      "titulo": "Motoca 2",
+      "descricao": "E essa Outra moto é o bixo...",
+      "valor": 52000,
+      "foto": "https://moto-station.com/wp-content/uploads/2017/12/135-1.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Motoca 3",
+      "descricao": "E essa Outra moto é o bixo...",
+      "valor": 52000,
+      "foto": "http://revistafullpower.uol.com.br/wp-content/uploads/2017/08/420R_RED_WITH_BLACK_SEAT.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Motoca 4",
+      "descricao": "E essa Outra moto é o bixo...",
+      "valor": 52000,
+      "foto": "https://www.yamaha-motor.com.br/upload/produto/153/galeria/ste_2138.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Motoca 5",
+      "descricao": "E essa Outra moto é o bixo...",
+      "valor": 52000,
+      "foto": "https://www.yamaha-motor.com.br/upload/produto/153/galeria/ste_2138.jpg"
+    },
+    {
+      "titulo": "Carro Ricardo",
+      "descricao": "adicionada mais top das motocas",
+      "valor": 45000,
+      "foto": "http://www.livroandroid.com.br/livro/carros/esportivos/McLAREN.png",
+      "video": "",
+      "id": 7
+    },
+    {
+      "titulo": "Motoca Adicionada",
+      "descricao": "Adicionada a Mais Legaal de Todas",
+      "valor": 15,
+      "foto": "http://www.doydomotos.com/wp/wp-content/uploads/2016/09/Ninja-H2.png",
+      "video": "",
+      "id": 8
+    },
+    {
+      "titulo": "Moto Henrique",
+      "descricao": "moto",
+      "valor": 45000,
+      "foto": "https://www.honda.com.br/motos/motos/sites/hda/files/styles/product_860x550/public/2017-06/_nc750x_cores_vermelha_0.png?itok=ghDdfoI5",
+      "video": "string",
+      "id": 16
+    },
+    {
+      "titulo": "Moto Bmw F 800 R",
+      "descricao": "Trinity",
+      "valor": 8000,
+      "foto": "https://a-static.mlcdn.com.br/618x463/moto-eletrica-infantil-ban-2-marchas-6-volts-bandeirante/magazineluiza/216110800/cb93893f04580d884454ba7783ec3104.jpg",
+      "video": "",
+      "id": 18
+    },
+    {
+      "titulo": "Motoca Emanuel",
+      "descricao": "Adicionada a Mais Legaal de Todas",
+      "valor": 15000,
+      "foto": "http://www.doydomotos.com/wp/wp-content/uploads/2016/09/Ninja-H2.png",
+      "video": "",
+      "id": 20
+    }
+  ],
+  "usuarios": [
+    {
+      "nome": "Ricardo e",
+      "email": "castro@mail.com",
+      "senha": "123",
+      "id": 1
+    },
+    {
+      "email": "teste@mail.com",
+      "nome": "Ricardo",
+      "senha": "123",
+      "id": 2
+    },
+    {
+      "email": "teste@mail.com",
+      "nome": "Ricardo",
+      "senha": "123",
+      "id": 3
+    },
+    {
+      "email": "teste@mail.com",
+      "nome": "Umdois",
+      "senha": "123",
+      "id": 4
+    },
+    {
+      "email": "fabio@1234",
+      "nome": "Fabio",
+      "senha": "1234",
+      "id": 5
+    },
+    {
+      "email": "mail.com",
+      "nome": "Tresquatro",
+      "senha": "4323",
+      "id": 6
+    },
+    {
+      "email": "delibgbh",
+      "nome": "Dyonnatan",
+      "senha": "LIURGF",
+      "id": 7
+    },
+    {
+      "email": "asdf",
+      "nome": "asdasdf",
+      "senha": "a",
+      "id": 8
+    },
+    {
+      "email": "a",
+      "nome": "asdf",
+      "senha": "asdf",
+      "id": 9
+    },
+    {
+      "email": "sss",
+      "nome": "sss",
+      "senha": "ssss",
+      "id": 10
+    },
+    {
+      "email": "asdf",
+      "nome": "asdfa",
+      "senha": "df",
+      "id": 11
+    },
+    {
+      "email": "goku@",
+      "nome": "Goku",
+      "senha": "goku",
+      "id": 12
+    },
+    {
+      "email": "xcbxcf",
+      "nome": "xfbfb",
+      "senha": "xcfbxfb",
+      "id": 13
+    }
+  ]
+}
