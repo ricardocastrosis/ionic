@@ -11,22 +11,24 @@ import { IProduto } from '../../interfaces/IProduto';
 @Injectable()
 export class ProdutosProvider {
 
+  url = "http://192.168.20.24:3000/";
+
   constructor(public http: HttpClient) {
     console.log('Hello ProdutosProvider Provider');
   }
 
   listaTodosJSON(){
-      return this.http.get<IProduto[]>("http://192.168.20.96:3000/produtos");
+      return this.http.get<IProduto[]>(this.url + "produtos");
   }
 
   adicionaProduto(dados:IProduto){
-    return this.http.post<IProduto>("http://192.168.20.96:3000/produtos", dados);
+    return this.http.post<IProduto>(this.url + "produtos", dados);
   }
   alteraProduto(dados:IProduto){
-    return this.http.put<IProduto>("http://192.168.20.96:3000/produtos/"+dados.id, dados);
+    return this.http.put<IProduto>(this.url + "produtos/"+dados.id, dados);
   }
   excluir(dados:IProduto){
-    return this.http.delete<IProduto>("http://192.168.20.96:3000/produtos/"+dados.id);
+    return this.http.delete<IProduto>(this.url + "produtos/"+dados.id);
   }
 
 

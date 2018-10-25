@@ -9,29 +9,35 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DetalhePage } from '../pages/detalhe/detalhe';
 import { CadUsuarioPage } from '../pages/cad-usuario/cad-usuario';
+import { LoginPage } from '../pages/login/login';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ProdutosProvider } from '../providers/produtos/produtos';
 import { UsuariosProvider } from '../providers/usuarios/usuarios';
+
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     DetalhePage,
-    CadUsuarioPage
+    CadUsuarioPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
+    HttpClientModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     DetalhePage,
-    CadUsuarioPage
+    CadUsuarioPage,
+    LoginPage
   ],
   providers: [
     StatusBar,

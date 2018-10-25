@@ -2,6 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IUsuario } from '../../interfaces/IUsuario';
 
+import { Storage } from '@ionic/storage';
+
+
 /*
   Generated class for the UsuariosProvider provider.
 
@@ -11,10 +14,21 @@ import { IUsuario } from '../../interfaces/IUsuario';
 @Injectable()
 export class UsuariosProvider {
 
-  url = 'http://192.168.20.96:3000/';
+  url = 'http://192.168.20.24:3000/';
 
-  constructor(public http: HttpClient) {
+  constructor(public http: HttpClient, 
+                private storage: Storage) {
+
     console.log('Hello UsuariosProvider Provider');
+
+    //this.storage.set('nome', "José");
+  }
+
+  setStorage(chave, valor){
+    this.storage.set(chave, valor);
+  }
+  getStorage(chave){
+    return this.storage.get(chave);
   }
 
   adiciona(dados:IUsuario){
@@ -23,5 +37,11 @@ export class UsuariosProvider {
   altera(dados:IUsuario){
     return this.http.put<IUsuario>(this.url + "usuarios/"+dados.id, dados);
   }
+  busca(dados:IUsuario){
+    return this.http.get<IUsuario>(this.url + 
+      "usuarios?email="+dados.email + 
+      "&senha=" + dados.senha);
+  }
+
 
 }
