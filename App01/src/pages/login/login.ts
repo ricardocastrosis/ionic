@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 import { IUsuario } from '../../interfaces/IUsuario';
 import { UsuariosProvider } from '../../providers/usuarios/usuarios';
 import { HomePage } from '../home/home';
@@ -22,7 +22,8 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController, 
     public navParams: NavParams,
-    public usuarioProvider: UsuariosProvider) {
+    public usuarioProvider: UsuariosProvider,
+    public menuCtrl: MenuController) {
   }
 
   ionViewDidLoad() {
@@ -33,10 +34,16 @@ export class LoginPage {
     this.usuarioProvider.busca(this.usuario).subscribe(res => {
       console.log(res);
       this.usuarioProvider.setStorage("logado", res[0]);
+      this.ativaMenu(false);
       this.navCtrl.setRoot(HomePage);
     }, erro => {
       console.log("Erro: " + erro.message);
     });
+  }
+
+  ativaMenu(ativo){
+    this.menuCtrl.enable(ativo, "menu1");
+    this.menuCtrl.enable(!ativo, "menu2");
   }
 
 }
